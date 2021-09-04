@@ -9,6 +9,7 @@ export const Containers = styled(B_Row)`
   background-color:#fafafa;
 	padding:20px;
 	border-radius:0.5rem;
+	margin:0.5rem auto;
 
 `;
 

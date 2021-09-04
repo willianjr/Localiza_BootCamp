@@ -7,9 +7,8 @@ const Profile = () => {
 
   return (
     <S.Wrapper>
-      <S.WrapperImg src={githubState.user.avatar} alt="Avatar of user" />
-      <S.Wrapper.Body>
-        <div>
+      	<S.WrapperImg src={githubState.user.avatar} alt="Avatar of user" />
+      	<S.WrapperInfoUser>
           <h1>{githubState.user?.name}</h1>
           <S.WrapperUserGeneric>
             <h3>Username:</h3>
@@ -35,8 +34,7 @@ const Profile = () => {
               {githubState.user.blog}
             </a>
           </S.WrapperUserGeneric>
-        </div>
-        <S.WrapperStatusCount>
+        	<S.WrapperStatusCount>
           <div>
             <h4>Followers</h4>
             <span> {githubState.user.followers}</span>
@@ -54,7 +52,7 @@ const Profile = () => {
             <span> {githubState.user.public_repos}</span>
           </div>
         </S.WrapperStatusCount>
-      </S.Wrapper.Body>
+      </S.WrapperInfoUser>
     </S.Wrapper>
   );
 };

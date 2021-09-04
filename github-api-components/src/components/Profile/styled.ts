@@ -1,30 +1,40 @@
 import styled from "styled-components";
 import Card from 'react-bootstrap/Card'
-import Figure from 'react-bootstrap/Figure'
 import Row from 'react-bootstrap/Row'
+import Figure from 'react-bootstrap/Figure'
 
-export const Wrapper = styled(Card)`
-	margin-top:1.5rem;
-	display:flex!important;
-	flex-direction:row;
-	align-content:center;
-	justify-content:center;
-	background-color:#cbcbcb;
-	padding:1rem;
+
+export const Wrapper = styled.div`
+	margin-top:0.5rem;
+	padding:2rem;
+	border-radius:0.5rem;
+	background: #2D3B50;
+	background: -webkit-linear-gradient(bottom, #2D3B50, #111C2E);
+	background: -moz-linear-gradient(bottom, #2D3B50, #111C2E);
+	background: linear-gradient(to top, #2D3B50, #111C2E);
+	display:flex;
+	justify-content: center;
+`;
+export const WrapperImg = styled.img`
+  border-radius: 50%;
+  width: 250px;
+	height:250px;
+  margin: 8px;
+	background-color:#fafafa;
+	flex-grow:0;
 `;
 
+
 export const WrapperInfoUser = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+	border-radius: 0.5rem;
+	margin-left:2rem;
 	flex-grow:2;
-  margin-left: 8px;
-  height: 200px;
-	box-shadow:3px 0px 20px -3px #000000;
+	color:#FFF;
+
+
   h1 {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 56px;
+    font-weight: normal;
   }
   h3 {
     font-size: 18px;
@@ -54,16 +64,7 @@ export const WrapperUserGeneric = styled.div`
   }
   a {
     font-size: 18px;
-    color: blue;
-    font-weight: bold;
+		text-decoration:underline;
   }
 `;
 
-export const WrapperImg = styled.img`
-  border-radius: 50%;
-  width: 250px;
-	height:250px;
-  margin: 8px;
-	flex-grow:0;
-	display:flex;
-`;

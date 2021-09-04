@@ -4,7 +4,7 @@ import  'bootstrap/dist/css/bootstrap.min.css' ;
 
 import theme from './global/theme'
 import {ResetCSS, Body} from './global/reset-css'
-import {Layout, Search, Profile} from './components'
+import {Layout, Search, Profile, Repositories} from './components'
 
 import useGithub from './hooks/github-hook';
 
@@ -26,6 +26,7 @@ function App() {
 						) :
 						(<>
 								<Profile/>
+								<Repositories/>
 						</>)}
 				</>
 				) :

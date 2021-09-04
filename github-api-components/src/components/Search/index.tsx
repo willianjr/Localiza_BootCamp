@@ -20,7 +20,7 @@ const Search = ():JSX.Element => {
   };
 
 	return (
-			<Form.Group>
+
 				<S.Containers>
  						<Col>
 							<Form.Control size="lg" type="text" placeholder="Digite o nome para procurar"
@@ -32,7 +32,7 @@ const Search = ():JSX.Element => {
   						</S.Button>
 							</Col>
 					</S.Containers>
-			</Form.Group>
+
 
 )
 };

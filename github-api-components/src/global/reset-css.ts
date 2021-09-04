@@ -3,8 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const Body = createGlobalStyle`
 
 body{
-		background: #ebebeb;
-		//background: -webkit-linear-gradient(bottom right, #000000, #9BADB7);
+	background: #51647F;
 
 	}
 `;
