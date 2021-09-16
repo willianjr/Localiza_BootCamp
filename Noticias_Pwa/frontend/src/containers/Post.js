@@ -43,7 +43,7 @@ function Post() {
     const { title, image, description, id } = post
 
     return (
-      <Col span={12} key={`post-${index}`}>
+      <Col span={12} key={`post-a-${index}`}>
         <article onClick={() => openPost(id)}>
           <p>
             <strong dangerouslySetInnerHTML={createMarkup(title)} />
@@ -65,8 +65,8 @@ function Post() {
     <div>
       <Link to="/">Back</Link>
       <Actions post={post} subject={subject} />
-      <Row gutter={[16, 16]}>
-        <Col span={24} md={16}>
+      <Row>
+        <Col md={8}>
           <p>{datePublished}</p>
           <h1 dangerouslySetInnerHTML={createMarkup(title)} />
           {image && renderImg({ image, description })}
@@ -74,8 +74,8 @@ function Post() {
           <hr />
           <p className="text" dangerouslySetInnerHTML={createMarkup(body)} />
         </Col>
-        <Col span={24} md={8}>
-          <Row gutter={[16, 16]}>
+        <Col md={8}>
+          <Row className='gy-3'>
             {news?.value?.map(renderPost)}
           </Row>
         </Col>

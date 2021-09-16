@@ -23,7 +23,7 @@ function World({ values }) {
     const spanValue = isFirst ? 12 : 6
     
     return (
-      <Col md={spanValue} mb={1} key={`World-${index}`}>
+      <Col md={spanValue} key={`World-${index}`}>
           <Card>
           {isFirst && renderImg({ image, description })}
           <Card.Body>
@@ -41,7 +41,7 @@ function World({ values }) {
   }
 
   return (
-    <Row className='gy-4'>
+    <Row className='gy-2'>
       {values?.map(renderPost)}
     </Row>
   )

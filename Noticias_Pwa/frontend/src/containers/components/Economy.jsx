@@ -19,8 +19,8 @@ function Economy({ values }) {
   const renderPost = (post, index) => {
     const { title, image, description, id } = post
     return (
-      <Col>
-        <Card md={6} key={`post-${index}`}>
+      <Col md={4} key={`economy-${index}`}>
+        <Card  >
         {image?.url ? renderImg({ image, description }) : ''}
         <Card.Body>
         <article onClick={() => openPost(id)}>

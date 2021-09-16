@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-import { Row, Col, Card, Container } from 'react-bootstrap'
+import { Row, Col, Card } from 'react-bootstrap'
 import { createMarkup } from '../../utils'
 import { useHistory } from 'react-router-dom'
 

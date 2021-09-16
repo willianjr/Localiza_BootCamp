@@ -37,7 +37,7 @@ function Home() {
   
   return (
     <Container fluid>
-     <Navbar bg="light" variant="light">
+     <Navbar bg="dark" variant="light">
     <Container fluid>
       <Navbar.Brand href="#home">
         <img
@@ -52,7 +52,7 @@ function Home() {
     </Container>
   </Navbar>
      <Row className='gy-3'>
-        <Col md={9}>
+        <Col md={8}>
           <Card>
             <Card.Header>World</Card.Header>
             <Card.Body>
@@ -60,7 +60,7 @@ function Home() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={3}>
+        <Col md={4}>
           <Card>
               <Card.Header>Economy</Card.Header>
               <Card.Body>
